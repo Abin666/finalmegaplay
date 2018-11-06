@@ -196,7 +196,7 @@ ol {
 .site-btn {
 	display: inline-block;
 	font-weight: 700;
-	border: 4px solid;
+	border: 6px solid;
 	min-width: 200px;
 	text-align: center;
 	padding: 19px 0;
@@ -204,6 +204,8 @@ ol {
 	background-color: transparent;
 	margin-right: 15px;
 	z-index: 1;
+    box-shadow: 1px 2px 6px  #888888;
+    font-size: 30px;
 	
 }
 
@@ -628,6 +630,12 @@ ol {
 	color: #fff;
 	font-weight: 700;
 	opacity: 0.8;
+}
+.sha{
+    text-shadow: 1px 1px 4px #000000;
+}
+.sha1{
+    text-shadow: 1px 1px 2px #000000;
 }
 
 .slide-num-holder span {
@@ -1093,6 +1101,9 @@ ol {
 	padding: 0 5px;
 }
 
+.bg{
+    background-color: #DBDBDB;
+}
 .footer-item ul li a:hover {
 	background: #EDA423;
 }
