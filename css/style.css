@@ -444,10 +444,8 @@ ol {
 .logo-area {
 	float: left;
 	display: inline-block;
-	background: #000000;
 	padding: 30px 30px 30px;
-	border-radius: 360px;
-}
+	}
 
 .phone-number {
 	float: right;
@@ -1099,7 +1097,7 @@ ol {
 /*  Other pages CSS
 /*----------------------------------------*/
 .page-header-section {
-	height: 445px;
+	height: 300px;
 	padding-top: 200px;
 }
 
@@ -1815,7 +1813,7 @@ ol {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.logo-area {
 		padding: 20px 40px 30px;
-		b
+		
 	}
 	.slide-content {
 		margin-left: 170px;
