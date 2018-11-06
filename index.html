@@ -44,12 +44,11 @@
 		<nav class="nav-menu ">
 			<ul>
 				<li class="active"><a href="home.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="service.html">Megaplay</a></li>
-				<li><a href="portfolio.html">Events</a></li>
-				<li><a href="contact.html">Wall</a></li>
-				<li><a href="contact.html">Story</a></li>
-				<li><a href="contact.html" target="_blank">Choir</a></li>
+				<li><a href="megaplay.html">Megaplay</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="contact.html">Social Wall</a></li>
+				<li><a href="story.html">Story</a></li>
+				<li><a href="choir.html" target="_blank">Choir</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -62,11 +61,10 @@
 		<div class="left-bar">
 			<div class="left-bar-content">
 				<div class="social-links">
-					<a href="#"><i class="fa fa-pinterest"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
+					
+					<a href="https://www.instagram.com/karunyamegaplay/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.facebook.com/KarunyaMegaPlay/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/KarunyaMegaPlay"><i class="fa fa-twitter"></i></a>
 				</div>
 			</div>
 		</div>
@@ -130,7 +128,7 @@
 							</div>
 						</div>
 						<h3>Choir & Music Team</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
+						<p>Choir master, vocalists and musicians of the ‘100 voice choir’.</p>
 						<a href="#" class="readmore">Member</a>
 					</div>
 				</div>
@@ -142,7 +140,7 @@
 							</div>
 						</div>
 						<h3>Cast & Crew</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
+						<p>Comprises of Actors, Voice artists, Script Writers and Choreographers.</p>
 						<a href="#" class="readmore">Member</a>
 					</div>
 				</div>
@@ -154,7 +152,7 @@
 							</div>
 						</div>
 						<h3>Stage Management</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
+						<p>Manages the stage property, settings and backdrops.</p>
 						<a href="#" class="readmore">Member</a>
 					</div>
 				</div>
@@ -166,7 +164,7 @@
 							</div>
 						</div>
 						<h3>Costume & Make-up Crew</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
+						<p>Handles the costume design and make-up of stage actors and choir.</p>
 						<a href="#" class="readmore">Member</a>
 					</div>
 				</div>
@@ -178,7 +176,7 @@
 							</div>
 						</div>
 						<h3>Promotions Team</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
+						<p>Manages all the promotion, content write-ups, contacts and enquiries.</p>
 						<a href="#" class="readmore">Member</a>
 					</div>
 				</div>
@@ -190,7 +188,7 @@
 							</div>
 						</div>
 						<h3>Technical Team</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
+						<p>Handles the technical aspects as well as hospitality & co-ordination.</p>
 						<a href="#" class="readmore">Member</a>
 					</div>
 				</div>
@@ -319,37 +317,78 @@
 
 
 	<!-- Clients section start -->
-	<div class="client-section spad">
+
+	<!-- Display the countdown timer in an element -->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 14, 2018 16:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("days").innerHTML = days;
+   document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+   document.getElementById("seconds").innerHTML = seconds;
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+<!-- Milestones section Start -->
+	<section class="milestones-section spad">
 		<div class="container">
-			<div id="client-carousel" class="client-slider">
-				<div class="single-brand">
-					<a href="#">
-						<img src="img/clients/1.png" alt="">
-					</a>
+			<h2 class="sp-title text-center">Let The Countdown <span>Begin</span></h2>
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="milestone">
+						<h2 id="days"></h2>
+						<p>Days</p>
+					</div>
 				</div>
-				<div class="single-brand">
-					<a href="#">
-						<img src="img/clients/2.png" alt="">
-					</a>
+				<div class="col-lg-3 col-md-6">
+					<div class="milestone">
+						<h2 id="hours"></h2>
+						<p>Hours</p>
+					</div>
 				</div>
-				<div class="single-brand">
-					<a href="#">
-						<img src="img/clients/3.png" alt="">
-					</a>
+				<div class="col-lg-3 col-md-6">
+					<div class="milestone">
+						<h2 id="minutes"></h2>
+						<p>Minutes</p>
+					</div>
 				</div>
-				<div class="single-brand">
-					<a href="#">
-						<img src="img/clients/4.png" alt="">
-					</a>
-				</div>
-				<div class="single-brand">
-					<a href="#">
-						<img src="img/clients/5.png" alt="">
-					</a>
+				<div class="col-lg-3 col-md-6">
+					<div class="milestone">
+						<h2 id="seconds"></h2>
+						<p>Seconds</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+	<!-- Milestones section end -->
+
+	
 	<!-- Clients section end -->
 
 
@@ -357,11 +396,10 @@
 	<footer class="footer-section">
 		<div class="footer-social">
 			<div class="social-links">
-				<a href="#"><i class="fa fa-pinterest"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
+				
+				<a href="https://www.instagram.com/karunyamegaplay/"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.facebook.com/KarunyaMegaPlay/"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/KarunyaMegaPlay"><i class="fa fa-twitter"></i></a>
 			</div>
 		</div>
 		<div class="container">
@@ -372,32 +410,30 @@
 							<div class="footer-item">
 								<ul>
 									<li><a href="#">Home</a></li>
-									<li><a href="#">About us</a></li>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Portfolio</a></li>
-									<li><a href="#">Blog</a></li>
+									
+									<li><a href="megaplay.html">Megaplay</a></li>
+									<li><a href="#">Social Wall</a></li>
+									<li><a href="blog.html">Blog</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="footer-item">
 								<ul>
-									<li><a href="#">Terms & Conditions</a></li>
-									<li><a href="#">FAQ</a></li>
-									<li><a href="#">Help Desk</a></li>
-									<li><a href="#">Job Aplications</a></li>
-									<li><a href="#">Site Map</a></li>
+									<li><a href="choir.html">Choir</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+									<li><a href="http://www.karunya.edu/visit/?current=/index-3">Site Map</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="footer-item">
 								<ul>
-									<li><a href="#">Privacy</a></li>
-									<li><a href="#">Contact us</a></li>
-									<li><a href="#">Newsletter</a></li>
-									<li><a href="#">Clients Testimonials</a></li>
-									<li><a href="#">FAQ</a></li>
+									
+									<li><a href="contact.html">Contact us</a></li>
+									<li><a href="">Newsletter</a></li>
+									<li><a href="testimonials.html">Testimonials</a></li>
+								
 								</ul>
 							</div>
 						</div>
@@ -427,3 +463,7 @@
 	<script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+<
