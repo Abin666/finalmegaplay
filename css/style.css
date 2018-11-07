@@ -1134,6 +1134,9 @@ ol {
 .footer-item ul li a:hover {
 	background: #EDA423;
 }
+.bg{
+    background-color: #cecece;
+}
 
 /*----------------------------------------*/
 /*  Other pages CSS
